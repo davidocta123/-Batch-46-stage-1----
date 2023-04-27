@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Home</title>
+
+    <style>
+        .btn-outline-primary{
+            --bs-btn-color:rgb(49, 28, 21);--bs-btn-border-color:orangered;--bs-btn-hover-color:#fff;--bs-btn-hover-bg:rgb(64, 153, 46);--bs-btn-hover-border-color:rgb(41, 62, 75);--bs-btn-focus-shadow-rgb:13,110,253;--bs-btn-active-color:#fff;--bs-btn-active-bg:orangered;--bs-btn-active-border-color:orangered;--bs-btn-active-shadow:inset 0 3px 5px rgba(0, 0, 0, 0.125);--bs-btn-disabled-color:orangered;--bs-btn-disabled-bg:transparent;--bs-btn-disabled-border-color:orangered;--bs-gradient:none
+        }
+
+        .sosialMedia {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .linkDetail {
+            text-decoration: none;
+            color: black;
+        }
+
+        .justifyCustom {
+            text-align: justify;
+        }
+    </style>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md bg-body-tertiary">
+        <div class="container-fluid mx-4">
+          <a class="navbar-brand" href="https://dumbways.id/">
+            <img style="height: 50px; width: 75px;" src="assets/img/dumbwaysLogo.png">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item mx-2">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="/addProject">Add Project</a>
+              </li>
+            </ul>
+            <div>
+              <a href="/contactMe">
+                  <button class="btn btn-outline-primary">Contact Me</button>
+              </a>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <div class="card m-4">
+        <div class="row justify-content-around align-items-center">
+            <div class="col-md-7 m-1 text-center">
+                <div class="card-body">
+                        <h5 class="card-title">Hy, Welcome to my hut</h5>
+                        <p class="card-text" style="text-align: justify;">Knowledgeable and qualified Network Engineer skilled at installing, configuring, OS linux, manage server and maintaining communication networks   
+                            Adept at monitoring network performance, completing backups, and improving quality and efficiency of network infrastructure, commited to performing high-quality work. Offers network+ and MTCNA mikrotik certification, great analytical skils 
+                            and excellent time management abilities Offers network+ and MTCNA mikrotik certification, great analytical skils and excellent time management abilities.</p>
+                        <div class="d-flex col-md justify-content-md-start justify-content-center align-items-center">
+                            <div>
+                                <a href="mailto:davidocta000@gmail.com">
+                                    <button class="btn btn-outline-primary">Contact</button>
+                                </a>
+                            </div>
+                            <div class="text-center mx-3">
+                                Download CV
+                            </div>
+                            <div>
+                                <a href="#" style="color: black;">
+                                    <i class="fa-solid fa-download fa-2x"></i>
+                                </a>
+                            </div>
+                        </div>
+                    <div class="d-flex flex-coloumn mt-4 justify-content-center justify-content-md-start">
+                        <div class="mx-3">
+                            <a class="sosialMedia" href="www.linkedin.com/in/davidocta11">
+                                <i class="fa-brands fa-linkedin fa-2x"></i>
+                            </a>
+                        </div>
+                        <div class="mx-3">
+                            <a class="sosialMedia" href="https://www.instagram.com/davidocta1111/">
+                                <i class="fa-brands fa-square-instagram fa-2x"></i>
+                            </a>
+                        </div>
+                        <div class="mx-3">
+                            <a class="sosialMedia" href="https://github.com/davidocta123">
+                                <i class="fa-brands fa-github fa-2x"></i>
+                            </a>
+                        </div>
+                        <div class="mx-3">
+                            <a class="sosialMedia" href="https://twitter.com/DavidOctavyant2">
+                                <i class="fa-brands fa-square-twitter fa-2x"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card m-3 mx-auto g-0" style="width: 16rem;">
+                <img src="assets/img/David Octa.jpg" class="rounded card-img-top" alt="profileCard"/>
+                <div class="card-title mx-auto fw-bold mb-0 mt-2">
+                    David Octavyanto
+                </div>
+                <div class="card-text mx-auto">
+                    Fullstack Developer
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-5">
+        <p class="h2 text-center">MY PROJECT</p>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-evenly">
+            <div class="col card my-3" style="width: 19rem;">
+                <img src="assets/img/kotlin.png" class="mt-2 card-img-top rounded">
+                <div class="card-title fw-bold mt-2 mx-2">
+                    <a class="linkDetail" href="/projectDetail">
+                    <p class="h5 m-0">
+                        Apa Itu Kotlin ?
+                        </p>
+                    </a>
+                </div>
+                <div class="card-text m-0 mx-2">
+                    <small class="text-muted"> Durasi 3 Bulan</small>
+                </div>
+                <div class="card-text mx-2">
+                    <p class="fs-6 mt-4">
+                        Kotlin adalah bahasa pemrograman modern, disajikan secara statis yang berjalan pada platform Java Virtual Machine (JVM). 
+                        Kotlin menggunakan compiler LLVM yang artinya, dapat dikompilasi ke dalam kode JavaScript, Bahasa pemrograman yang satu ini banyak diminati oleh para developer.
+                    </p>
+                </div>
+                <div class="d-flex justify-content-around mx-2">
+                    <div class="mx-1">
+                        <i class="fa-brands fa-square-js fa-2x"></i>
+                    </div>
+                    <div class="mx-1">
+                        <i class="fa-brands fa-golang fa-2x"></i>
+                    </div>
+                    <div class="mx-1">
+                        <i class="fa-brands fa-github fa-2x"></i>
+                    </div>
+                    <div class="mx-1">
+                        <i class="fa-brands fa-node fa-2x"></i>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-evenly mx-2 my-3">
+                    <div>
+                        <button class="btn btn-info" style="width: 125px;">Edit</button>
+                    </div>
+                    <div>
+                        <button class="btn btn-info" style="width: 125px;">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col card my-3" style="width: 19rem;">
+                <img src="assets/img/js.png" class="mt-2 card-img-top rounded">
+                <div class="card-title fw-bold mt-2 mx-2">
+                    <p class="h5 m-0">
+                        JavaScript
+                    </p>
+                </div>
+                <div class="card-text m-0 mx-2">
+                    <small class="text-muted"> Durasi 1 Bulan</small>
+                </div>
+                <div class="card-text mx-2">
+                    <p class="fs-6 mt-4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in molestie nulla. Donec tincidunt nulla nec ante vestibulum convallis.
+                    </p>
+                </div>
+                <div class="d-flex justify-content-around mx-2">
+                    <div class="mx-1">
+                        <i class="fa-brands fa-square-js fa-2x"></i>
+                    </div>
+                    <div class="mx-1">
+                        <i class="fa-brands fa-golang fa-2x"></i>
+                    </div>
+                    <div class="mx-1">
+                        <i class="fa-brands fa-github fa-2x"></i>
+                    </div>
+                    <div class="mx-1">
+                        <i class="fa-brands fa-node fa-2x"></i>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-evenly mx-2 my-3">
+                    <div>
+                        <button class="btn btn-info" style="width: 125px;">Edit</button>
+                    </div>
+                    <div>
+                        <button class="btn btn-info" style="width: 125px;">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col card my-3" style="width: 19rem;">
+                <img src="assets/img/php.png" class="mt-2 card-img-top rounded">
+                <div class="card-title fw-bold mt-2 mx-2">
+                    <p class="h5 m-0">
+                        PHP
+                    </p>
+                </div>
+                <div class="card-text m-0 mx-2">
+                    <small class="text-muted"> Durasi 5 Bulan</small>
+                </div>
+                <div class="card-text mx-2">
+                    <p class="fs-6 mt-4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in molestie nulla. Donec tincidunt nulla nec ante vestibulum convallis.
+                    </p>
+                </div>
+                <div class="d-flex justify-content-around mx-2">
+                    <div class="mx-1">
+                        <i class="fa-brands fa-square-js fa-2x"></i>
+                    </div>
+                    <div class="mx-1">
+                        <i class="fa-brands fa-golang fa-2x"></i>
+                    </div>
+                    <div class="mx-1">
+                        <i class="fa-brands fa-github fa-2x"></i>
+                    </div>
+                    <div class="mx-1">
+                        <i class="fa-brands fa-node fa-2x"></i>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-evenly mx-2 my-3">
+                    <div>
+                        <button class="btn btn-info" style="width: 125px;">Edit</button>
+                    </div>
+                    <div>
+                        <button class="btn btn-info" style="width: 125px;">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+  </body>
+</html>
