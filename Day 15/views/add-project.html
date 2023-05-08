@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Batch 45</title>
+
+    <style>
+        .btn-outline-primary{
+            --bs-btn-color:orangered;--bs-btn-border-color:orangered;--bs-btn-hover-color:#fff;--bs-btn-hover-bg:orangered;--bs-btn-hover-border-color:orangered;--bs-btn-focus-shadow-rgb:13,110,253;--bs-btn-active-color:#fff;--bs-btn-active-bg:orangered;--bs-btn-active-border-color:orangered;--bs-btn-active-shadow:inset 0 3px 5px rgba(0, 0, 0, 0.125);--bs-btn-disabled-color:orangered;--bs-btn-disabled-bg:transparent;--bs-btn-disabled-border-color:orangered;--bs-gradient:none
+        }
+    </style>
+
+</head>
+  <body>
+    <nav class="navbar navbar-expand-md bg-body-tertiary">
+        <div class="container-fluid mx-4">
+          <a class="navbar-brand" href="https://dumbways.id/">
+            <img style="height: 50px; width: 75px;" src="assets/img/dumbwaysLogo.png">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item mx-2 my-1">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+                {{if .dataSession.IsLogin}}
+              <li class="nav-item mx-2 my-1">
+                <a class="nav-link active" href="/addProject">Add Project</a>
+              </li>
+                {{else}}
+              <div style="display: none;"></div>
+                {{end}}
+            </ul>
+            <div class="navbar-nav mb-2 mb-lg-0">
+                {{if .dataSession.IsLogin}}
+              <li class="nav-item mx-2 my-1">
+                <a class="nav-link active" href="#">Halo, {{.dataSession.Name}}</a>
+              </li>
+              <li class="nav-item mx-2 my-1">
+                <a class="nav-link" href="/logout">Logout</a>
+              </li>
+                {{else}}
+              <li class="nav-item mx-2 my-1">
+                <a class="nav-link" href="/formRegister">Register</a>
+              </li>
+              <li class="nav-item mx-2 my-1">
+                <a class="nav-link" href="/formLogin">Login</a>
+              </li>
+                {{end}}
+              <a href="/contactMe">
+                  <button class="btn btn-outline-primary mx-2 my-1">Contact Me</button>
+              </a>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <form action="/addProject" method="post" autocomplete="off">
+      <div class="d-flex row w-75 justify-content-center mx-auto">
+          <p class="h3 text-center my-4">ADD MY PROJECT</p>
+          <div class="mb-3">
+              <label class="form-label">Project Name</label>
+              <input name="titleProject" type="text" class="form-control" id="exampleFormControlInput1">
+          </div>
+          <div class="d-flex row p-0">
+              <div class="w-50">
+                  <label class="form-label">Start Date</label>
+                  <div>
+                      <input name="startDate" class="form-control" id="tglMulai" type="date">
+                  </div>
+              </div>
+              <div class="w-50 mb-3">
+                  <label class="form-label">End Date</label>
+                  <div>
+                      <input name="endDate" class="form-control" id="tglAkhir" type="date">
+                  </div>
+              </div>
+              <div class="mb-3">
+                  <label class="form-label">Deksripsi</label>
+                  <textarea name="contentProject" class="form-control" id="textAreaProject" rows="3" style="resize: none;"></textarea>
+              </div>
+                  <label class="form-label">Technologies</label>
+              <div class="mb-3 px-4 row row-cols-1 row-cols-sm-2">
+                  <div class="form-check">
+                      <input name="JavaScript" class="form-check-input" type="checkbox" value="JavaScript" id="JavaScript">
+                      <label class="form-check-label" for="JavaScript">
+                        JavaScript
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input name="Golang" class="form-check-input" type="checkbox" value="Golang" id="Golang">
+                      <label class="form-check-label" for="Golang">
+                        Golang
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input name="Github" class="form-check-input" type="checkbox" value="Github" id="Github">
+                      <label class="form-check-label" for="Github">
+                        Github
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input name="NodeJs" class="form-check-input" type="checkbox" value="NodeJs" id="NodeJs">
+                      <label class="form-check-label" for="NodeJs">
+                        Node JS
+                      </label>
+                  </div>
+              </div>
+              <div class="mb-3">
+                  <label for="formFile" class="form-label">Upload Image</label>
+                  <input class="form-control" type="file" id="formFile">
+              </div>
+              <div class="d-flex justify-content-end">
+                  <button class="btn btn-info" style="width: 125px;" onclick="">Submit</button>
+              </div>
+          </div>
+      </div>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
